@@ -1,0 +1,45 @@
+:root {
+  --background: #1a1a1a;
+  --pattern: #2f2f2f;
+}
+
+body {
+  background: var(--background);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  color: black;
+  -webkit-text-fill-color: var(--background);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--pattern);
+  font-size: clamp(48px, 60px, 10vw);
+}
+
+.container {
+  background: var(--background);
+}
+
+.shirt {
+  position: relative;
+  margin-top: 10vh;
+  min-height: 60vh;
+  max-height: 600px;
+  -webkit-mask-image: url(https://i.imgur.com/ARNcSnl.png);
+          mask-image: url(https://i.imgur.com/ARNcSnl.png);
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+          mask-position: center center;
+  background-image: url(https://www.transparenttextures.com/patterns/asfalt-dark.png);
+  background-color: var(--pattern);
+  background-size: fit;
+  background-position: center;
+  background-repeat: repeat;
+  -webkit-transition: all 2s ease-in;
+  transition: all 2s ease-in;
+}
